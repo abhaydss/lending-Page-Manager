@@ -1,0 +1,144 @@
+.sec2-box {
+  display: grid;
+  grid-template-areas:
+    "top top top top top top top top top top top top top top"
+    ". . . . . . . . . . . . . p";
+}
+.secbtn {
+  display: inline-block;
+  grid-area: secbtn;
+  padding: 0em 1.2em;
+  width: 4rem;
+  height: 2rem;
+  position: relative;
+  top: 1rem;
+  margin: 0rem 1rem;
+}
+.top {
+  grid-area: top;
+  display: flex;
+  position: relative;
+  right: 0.26rem;
+}
+#t2{
+  position: relative;
+  left: 1.268rem;
+}
+#t3{
+  position: relative;
+  left: 1.6rem;
+}
+
+#sec2-part1 {
+  width: 30%;
+}
+
+#sec2-part2 {
+  width: 40%;
+}
+
+#section2 {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+
+  margin-top: 5rem;
+  /* place-items: center; */
+}
+
+.text2 {
+  margin-bottom: 1.3rem;
+  grid-area: p;
+  /* position: relative;
+  left: 1rem; */
+}
+
+.sec2h1 {
+  grid-area: h1;
+}
+#bgmobile2 {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  
+  left: 0;
+  z-index: -1;
+}
+
+#bgmobile3 {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  
+  left: 0;
+  z-index: -1;
+}
+@media (max-width: 764px) {
+  .text2 {
+    left: 0.67rem;
+  }
+}
+@media (max-width: 700px) {
+  .text2 {
+    left: 0.5rem;
+  }
+}
+@media (max-width: 612px) {
+  #section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+  #t2, #t3{
+    position: unset;
+  }
+  #sec2-part1 {
+    width: 70%;
+    margin-bottom: 3rem;
+  }
+  #sec2-part2 {
+    width: 92%;
+  }
+  #sec2-part1 > h1 {
+    text-align: center;
+  }
+  #sec2-part1 > p {
+    text-align: center;
+  }
+  .sec2-box {
+    display: grid;
+    grid-template-areas:
+      "top top"
+      " p p ";
+  }
+  .secbtn {
+    margin-right: 0;
+  }
+  .sec2h1 {
+    margin: 0;
+  }
+  .secbtn {
+    margin: 0;
+    top: 0;
+    margin-right: 1rem;
+  }
+  .top {
+    background: linear-gradient(to right, #FFF0EC 70%, white);
+    /* padding: 0.36em; */
+    margin: 1.2rem 0rem;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+  }
+  #bgmobile2{
+      display: none;
+  }
+  #bgmobile3{
+      display: block;
+
+  }
+}

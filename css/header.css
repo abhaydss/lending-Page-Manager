@@ -1,0 +1,163 @@
+#ham-icon, #cross-icon{
+    display: none;
+}
+.nav-btn{
+    font-size: 0.7rem;
+    border: 0;
+    padding: 0.4rem 1.4rem;
+    border-radius: 1.16rem;
+    background-color: #df5329;
+    color: white;
+    cursor: pointer;
+    box-shadow: -0px 5px 12px rgb(255, 200, 180);
+}
+
+.nav-btn:hover{
+    opacity: 0.7;
+}
+header>section{
+    position: relative;
+}
+.litext{
+    font-size: 0.7rem;
+    list-style: none;
+    margin: 0 0.8rem;
+    color: 	#1D1E25;
+    font-weight: 700;
+    cursor: pointer;
+}
+#list{
+    display: flex;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0rem;
+}
+
+.litext:hover{
+    opacity: 0.7;
+}
+
+#header-heading{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #1D1E25;
+    margin: 1.3rem 0rem;
+}
+#header-section{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 4rem;
+    justify-content: space-around;
+}
+#intrologo{
+    width: 30%;
+}
+.content{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.content>p{
+    margin: 0.6rem 0rem;
+}
+.content>button{
+    margin: 1.2rem 0rem;
+}
+#intro-img{
+    height: 56vh;
+    width: 100%;
+}
+header{
+    position: relative;
+}
+#bg2{
+    display: none;
+}
+.bgimg{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#bgmobile3{
+    display: none;
+}
+@media (max-width:712px) {
+    nav{
+        padding: 1rem 0rem;
+    }
+    #nav-btn{
+        padding: 0.3rem 1.17rem;
+    }
+}
+
+
+@media (max-width:612px) {
+    .nav-btn{
+        display: none;
+    }
+    nav{
+        padding: 1.3rem;
+        position: relative;
+    }
+    #list{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px 2000px rgb(0, 0, 0);
+        position: absolute;
+        z-index: 2;
+        width: 80%;
+        height: 40vh;
+        top: 5rem;
+        left: 10%;
+        margin: auto;
+        display: none;
+    }
+    .litext{
+        margin: 0.76rem;
+        font-size: 1rem;
+    }
+    #ham-icon{
+        display: block;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    #header-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .content{
+        align-items: center;
+        width: 95%;
+        margin: 0.9rem;
+    }
+    #intrologo{
+        width: 95%;
+        margin: 0.9rem;
+    }
+    .content{
+        text-align: center;
+    }
+    #btn1{
+        display: block;
+    }
+    #bg1{
+        display: none;
+    }
+    #bg2{
+        display: block;
+    }
+}

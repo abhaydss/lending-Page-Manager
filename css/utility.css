@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam', sans-serif;
+    outline: none;
+}
+
+.text{
+    font-size: 0.87rem;
+    font-weight: 500;
+    color: 	#9EA2B3;
+}
+
+.generalheading{
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #1D1E25;
+    margin: 0.7rem 0rem;
+}
+.generalheading2{
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1D1E25;
+    margin: 1rem 0rem;
+}

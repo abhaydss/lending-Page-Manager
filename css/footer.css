@@ -1,0 +1,136 @@
+footer {
+  background-color: #1d1e25;
+  padding: 2.5rem 2rem;
+}
+
+.smicons{
+  margin: 0rem 0.5rem;
+  cursor: pointer;
+}
+#footerlogo {
+  grid-area: flogo;
+}
+#smediabox {
+  grid-area: smb;
+  padding-top: 1.5rem;
+}
+.smicons>path{
+    fill: white;
+}
+.smicons>path:hover{
+    fill: #df5329;
+}
+#footerul1 {
+  grid-area: ul1;
+}
+#footerul2 {
+  grid-area: ul2;
+}
+
+.ful > li {
+  color: white;
+  list-style: none;
+  margin: 0.4em;
+  cursor: pointer;
+}
+.ful > li:hover {
+  color: coral;
+}
+#btn4 {
+  box-shadow: unset;
+}
+
+#footerinp {
+  outline: none;
+  padding: 0.3em 0.8em;
+  border: 0;
+  border-radius: 4rem;
+}
+#mail {
+  grid-area: inp;
+  box-sizing: border-box;
+}
+#ftext {
+  grid-area: ft;
+}
+
+::placeholder{
+    font-size: 0.7rem;
+}
+
+footer {
+  display: grid;
+  grid-template-areas:
+    "flogo . ul1 . ul2 . inp"
+    ". . . . . . ."
+    "smb . . . . . . "
+    ". . . . . . ft ";
+}
+
+#incorrect {
+  color: #df5329;
+  font-size: 0.57rem;
+  display: none;
+}
+
+
+@media (max-width: 700px) {
+  footer {
+    padding: 1.3rem 0rem;
+  }
+}
+
+@media (max-width: 612px) {
+  footer {
+    grid-template-areas: unset;
+    
+  }
+  #btn4 {
+    display: block;
+  }
+  .boxf1 {
+    display: flex;
+    width: 100%;
+  }
+  #mail {
+    width: 90%;
+    margin: 1.2em 0rem;
+  }
+  #footerinp {
+    width: 83%;
+    margin-right: 0.6em;
+  }
+  footer {
+    display: grid;
+    grid-template-areas:
+      "inp  inp"
+      "ul1 ul2"
+      "smb smb "
+      "flogo flogo "
+      "ft ft";
+    place-items: center;
+    padding: 1.2em 0rem;
+  }
+  #footerul2 {
+    position: relative;
+    bottom: 1.5vh;
+  }
+  .ful {
+    margin: 1.3em 0rem;
+  }
+  #footerlogo {
+    margin: 2.3em 0rem;
+  }
+ 
+}
+
+@media (max-width: 356px) {
+  footer{
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+article{
+    color: rgb(87, 25, 0);
+}

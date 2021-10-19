@@ -1,0 +1,146 @@
+#avatar4 {
+  display: none;
+}
+#sec3h1 {
+  text-align: center;
+  margin: 1.3rem;
+}
+#section3 {
+  margin-top: 2.5rem;
+}
+.avatar {
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  top: -4rem;
+}
+.avatarbox::before {
+  content: "";
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgb(250, 250, 250);
+}
+#avatar-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+}
+#slider{
+  display: none;
+}
+.avatarbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.2rem;
+  position: relative;
+  /* width: 30%; */
+  height: 30vh;
+}
+.avtext {
+  text-align: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5rem 0rem 3rem 0rem;
+}
+
+.avh {
+  margin-top: 0rem;
+}
+
+.circle {
+  height: 0.5rem;
+  width: 0.5rem;
+  border: 0.3px solid #df5329;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0.17rem;
+}
+
+#cr-1{
+  background-color: #df5329;
+}
+
+
+
+@media (max-width: 1150px) {
+  .avatar {
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    bottom: -3vh;
+  }
+}
+
+@media (max-width: 772px) {
+  .avatar {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    bottom: -5vh;
+  }
+}
+@media (max-width: 650px) {
+  .avatar {
+    height: 2.7rem;
+    width: 2.7rem;
+    position: unset;
+  }
+  #slider{
+    display: block;
+  }
+  .avatarbox {
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem;
+    position: relative;
+    /* width: 30%; */
+    height: 30vh;
+    width: 95%;
+    margin-bottom: 1.3rem 0rem;
+    
+  }
+  #avatar2, #avatar3, #avatar4{
+    display: none;
+  }
+  #avatar1{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .avh {
+    margin: 0.3rem 0rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem 0rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  #slider {
+    display: block;
+  }
+
+}
+
+@media (max-width:232px) {
+  .circle{
+    margin: 0.6rem;
+  }
+}
